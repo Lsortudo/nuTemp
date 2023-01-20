@@ -36,6 +36,14 @@ android {
 }
 
 dependencies {
+    def lifecycle_version = "1.1.1"
+
+    // ViewModel and LiveData for MVVM Architecture
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+    // Retrofit for REST requests
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.google.code.gson:gson:2.10'
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.0'
