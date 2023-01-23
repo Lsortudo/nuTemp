@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showBtnSheetDialog() {
-        val dialog = BottomSheetDialog(this)
+        val dialog = BottomSheetDialog(this, R.style.BottomSheetDialog)
 
         val sheetBinding: AddPackageSheetBinding =
             AddPackageSheetBinding.inflate(layoutInflater, null, false)
