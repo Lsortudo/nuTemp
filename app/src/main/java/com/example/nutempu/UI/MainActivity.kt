@@ -2,6 +2,7 @@ package com.example.nutempu.UI
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 import com.example.nutempu.R
 import com.example.nutempu.databinding.ActivityMainBinding
 import com.example.nutempu.databinding.AddPackageSheetBinding
@@ -24,7 +25,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showBtnSheetDialog() {
-        val dialog = BottomSheetDialog(this, R.style.BottomSheetDialog)
+        val dialog = BottomSheetDialog(this, R.style.BottomSheetDialog).apply{
+            window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE)
+        }
 
         val sheetBinding: AddPackageSheetBinding =
             AddPackageSheetBinding.inflate(layoutInflater, null, false)
