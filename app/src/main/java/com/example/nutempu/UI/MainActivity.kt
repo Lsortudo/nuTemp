@@ -32,6 +32,14 @@ class MainActivity : AppCompatActivity() {
         val sheetBinding: AddPackageSheetBinding =
             AddPackageSheetBinding.inflate(layoutInflater, null, false)
 
+        sheetBinding.btNewPackage.setOnClickListener {
+            dialog.dismiss()
+            val trackingNumber = sheetBinding.etTrackingNumber.text.toString()
+
+            //Código abaixo sria pra fazer a requisição rest e fazer minha lista renderizar isso
+        // binding.TextView.text = trackingNumber
+        }
+
         dialog.setContentView(sheetBinding.root)
         dialog.show()
     }
