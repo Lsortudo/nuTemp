@@ -1,5 +1,7 @@
 # nuTemp
 
+🔴 Projeto descontinuado por motivo que os correios cancelaram 2 APIs publica que não precisava de AUTH e a que precisa utiliza conta juridica/minhas importações e o token expira de 24 em 24 horas.
+
 
 This challenge boils down to: An idea to be able to add packages and track them with a **clean** and **simple** interface; and it'll also help me to learn more about API, logic, testing, architecture and the sky is the limit.
 Also i'll try to use push notifications, email notifications and Crashlytcs.
